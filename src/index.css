@@ -1,13 +1,19 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+.btn{
+    @apply text-white bg-[#007AFF] rounded-md shadow-md p-3 hover:scale-[1.1]
+    ease-in duration-100 cursor-pointer hover:bg-blue-500
+}
+.loginAndRegisterStyle{
+    @apply text-[14px] cursor-pointer ml-[18px] font-bold hover:text-[#007AFF]
+}
+.product_img
+{
+   @apply w-[80%] h-[80%] rounded-lg shadow-lg hover:scale-[1.1] ease-in duration-300;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.colorSelect
+{
+   @apply w-[2rem] h-[2rem] rounded-full border-2 p-[10px] ml-5 cursor-pointer;
 }
+@tailwind utilities;
