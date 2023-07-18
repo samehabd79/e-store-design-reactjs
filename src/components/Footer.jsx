@@ -4,7 +4,7 @@ import React from "react";
 const Footer = () => {
     const socialStyle = 'm-3 rounded-full cursor-pointer p-2 text-white';
   return (
-
+    <>
     <div className="flex items-center justify-around p-2 mobile:flex-col mobile:items-start">
       <div className="flex-1 flex flex-col flex-wrap p-2">
         <h1 className="text-[25px]">E-Store</h1>
@@ -42,11 +42,17 @@ const Footer = () => {
         </div>
         <div className="flex m-3">
             <EmailOutlined className="text-[#007AFF]"/>
-            <p className='pl-3'>Ahmadroa925@gmail.com</p>
+            <p className='pl-3'>samehdev@samehdev.com</p>
         </div>
       </div>
     </div>
-  );
+    <div className='flex items-center justify-center bg-[#007AFF]  text-white font-bold'>
+      <span>
+      © 2023 - 2024 E-Store. All Rights Reserved — Made with ❤ SamehDev.
+      </span>
+    </div>
+    </>
+  ); 
 };
 
 export default Footer;

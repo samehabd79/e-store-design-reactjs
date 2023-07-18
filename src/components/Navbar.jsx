@@ -21,7 +21,7 @@ const Navbar = () => {
 
         {/* Logo */}
         <div className="center flex-1 text-center mobile:ml-6">
-            <div className="logo font-bold mobile:text-sm"><span className="cursor-pointer">E-Store</span></div>
+            <div className="logo font-bold mobile:text-sm"><Link to={"/"} className="cursor-pointer">E-Store</Link></div>
         </div>
 
         {/* Right Div */}
